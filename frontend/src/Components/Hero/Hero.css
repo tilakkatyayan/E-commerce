@@ -1,0 +1,76 @@
+.hero {
+    height: 100vh;
+    /*viewport height to cover the entire viewport.making it a prominent section on the webpage.*/
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+    /*180 deg means gradient go from top to bottom ,
+     starting color of gradient is light pink,ending color of gradient starting to blend in at 60% of the height of the element.*/
+    display: flex;
+
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    /*Adds 180px of padding to the left side of the .hero-left element.*/
+    line-height: 1.1;
+    /*Controls the space between lines of text, making the text more compact
+     and readable without too much vertical spacing.enhancing readability*/
+    margin-bottom: 50px;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 90px;
+    font-weight: 650;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img {
+    width: 105px;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/*.hero-left h2: Styles the headings to be dark, semi-bold, and medium-sized.
+.hero-left p: Styles the paragraphs to be dark, very large, and bold, making them highly prominent.
+.hero-hand-icon: Arranges child elements in a horizontal row with consistent spacing and vertical centering.
+.hero-hand-icon img: Ensures images within .hero-hand-icon have a consistent width.
+.hero-latest-btn: Styles a call-to-action button to be prominent and visually appealing with center alignment, 
+consistent spacing, rounded corners, and a bright red background with white text.*/
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    margin-bottom: 70px;
+    margin-top: 20px;
+}

@@ -1,0 +1,43 @@
+.item {
+    width: 350px;
+    /* Defines a fixed width for each item, ensuring uniformity in size when displaying multiple items in a grid or list.
+     This helps maintain a consistent layout.*/
+}
+
+.item p {
+    margin: 6px 0px;
+    /*Sets the top and bottom margin of the paragraph to 6 pixels and removes the left and right margin.*/
+}
+
+.item-prices {
+    display: flex;
+    gap: 20px;
+    /*Aligns the price elements (.item-price-new and .item-price-old) in a
+     horizontal row and spaces them evenly. This makes the price information neatly aligned and easy to read.*/
+}
+
+.item-price-new {
+    color: #374151;
+    /* Sets the text color to a dark gray.*/
+    font-size: 18px;
+    font-weight: 600;
+    /*: Styles the new price to be prominent with a slightly bold 
+    and dark gray font, making it stand out as the current price of the item.*/
+}
+
+.item-price-old {
+    color: #8c8c8c;
+    /*Sets the text color to a lighter gray.*/
+    font-size: 18px;
+    font-weight: 500;
+    /*medium bold*/
+    text-decoration: line-through;
+    /*line between the text, means cutting the text*/
+}
+
+.item:hover {
+    transform: scale(1.05);
+    /*Scales the item up by 5% when hovered over.*/
+    transition: 0.6s;
+    /*Smoothens the scaling effect over 0.6 seconds.*/
+}

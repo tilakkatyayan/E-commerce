@@ -1,0 +1,109 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;*/
+    padding: 16px;
+    /*16px*/
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+    display: flex;
+    /* horizontal left to right of img and p*/
+    align-items: center;
+    /*vertical cental(cross axis) of img and p*/
+    gap: 10px;
+    /*gap between elements*/
+}
+
+.nav-logo p {
+    color: #171717;
+    /* dark shade of gray (#171717). This color is close to black but slightly softer,*/
+    font-size: 38px;
+    /*This relatively large font size ensures that the text "SHOPPER" is highly visible and stands out in the navbar*/
+    font-weight: 600;
+    /*element to 600, which corresponds to a semi-bold weight.without being as heavy as a fully bold font weight (700 or higher).*/
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /*This removes the default bullet points (list markers) from the list items (li elements).*/
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    /*Removing default styling of hr which includes borderensures that this border does not interfere with the custom styles being applied.*/
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    /*Applies rounded corners to the <hr/> element.*/
+    background: #FF4141;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-cart button {
+    width: 157px;
+    /*Increase width*/
+    height: 58px;
+    outline: none;
+    /* Removes the default outline that browsers add to buttons when they are focused.*/
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    /* With a radius of 75 pixels, the button will have a pill or capsule shape,*/
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    /*Sets the font weight of the button text to 500, which is a medium-bold weight*/
+    background: white;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active {
+    background: #f3f3f3;
+    /*Changes the background color of the button to #f3f3f3 (a light gray) when the button is in the active state.*/
+}
+
+.nav-cart-count {
+    width: 22px;
+    /*This ensures the element is small and compact, suitable for displaying a count.*/
+    height: 22px;
+    /*making it a perfect square (22px by 22px), which is ideal for a badge-like appearance.*/
+    display: flex;
+    /* This enables the use of flexbox properties to align its content (the count) centrally. */
+    justify-content: center;
+    /*This ensures that the number is perfectly centered along the horizontal axis.*/
+    align-items: center;
+    /*This ensures that the number is perfectly centered along the vertical axis.*/
+    margin-top: -35px;
+    /* Moves the .nav-cart-count element up by 35 pixels. This negative margin positions 
+    the element above its normal position, likely to place it on top of the cart icon.*/
+    margin-left: -55px;
+    /*Moves the .nav-cart-count element to the left by 55 pixels. This negative margin 
+    positions the element to the left of its normal position, again likely to align it with the cart icon.*/
+    border-radius: 11px;
+    /*Rounds the corners of the .nav-cart-count element, giving it a circular shape
+     (since its width and height are equal). With a radius of 11 pixels (half of 22 pixels), this creates a perfect circle.*/
+    font-size: 14px;
+    background: red;
+    color: white;
+}
