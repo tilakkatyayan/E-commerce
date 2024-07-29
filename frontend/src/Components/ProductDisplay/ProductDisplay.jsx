@@ -67,7 +67,7 @@ const ProductDisplay = (props) => {
 
                 <button
                     onClick={() => {
-                        addToCart(product.id);
+                        addToCart(product.id);//passing product id to addtocart context
                     }}
                 >
                     ADD TO CART

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";  //It shows path to product in product page
 import "./Breadcrum.css";
 
 import arrow_icon from "../Assets/breadcrum_arrow.png";

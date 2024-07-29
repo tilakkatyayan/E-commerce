@@ -107,3 +107,8 @@
     background: red;
     color: white;
 }
+
+.nav-dropdown {
+    display: none;
+}
+

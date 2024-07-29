@@ -35,7 +35,7 @@
     gap: 20px;
 }
 
-.footer-icon-container {
+.footer-icons-container {
     padding: 10px;
     padding-bottom: 6px;
     background: #fbfbfb;
@@ -60,3 +60,4 @@
     height: 3px;
     background: #c7c7c7;
 }
+
