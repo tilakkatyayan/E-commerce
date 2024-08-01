@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 //Database Connection
-mongoose.connect("mongodb+srv://katyayantilak:Tilak2012@cluster0.q0dzuxd.mongodb.net/e-commerce"); //path to our databse where we add data of our appln
+//path to our databse where we add data of our appln
 
 //API Creation
 app.get("/",(req,res)=>{
